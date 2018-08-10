@@ -12,6 +12,4 @@ RUN apt-get update  -qq \
     && apt-cache madison docker-ce && apt-get install docker-ce=17.03.2~ce-0~debian-stretch -y
 
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.9.0/bin/linux/amd64/kubectl && chmod +x kubectl && sudo mv kubectl /usr/local/bin/
-ADD .minikube ~/.minikube
-ADD .kube ~/.kube
 RUN usermod -aG docker jenkins
