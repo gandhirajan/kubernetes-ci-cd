@@ -83,4 +83,4 @@ spec:
           path: /root/.kube
       - name: jenkins-persistent-storage
         persistentVolumeClaim:
-claimName: jenkins-claim
+          claimName: jenkins-claim
